@@ -4,6 +4,7 @@
 <title>Proyecto de Aula | G. de Mercado</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <!------ js ------>
 <script src="js/jquery.min.js"> </script>
 		<script type="text/javascript" src="js/move-top.js"></script>
@@ -21,6 +22,62 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
 <!--- fonts --->
+
+<style>
+        .menu-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            height: 100vh;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            border-radius: 10px;
+        }
+        .menu li {
+            margin: 10px;
+        }
+        .menu li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: #9F449B;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .menu li a i {
+            margin-right: 10px;
+        }
+        .menu li a:hover {
+            background-color: #fff;
+            color: #9F449B;
+            transform: scale(1.1);
+        }
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+            .menu li {
+                flex: 0 0 auto;
+                width: 100%;
+                margin: 5px 0;
+            }
+            .menu li a {
+                width: 80%;
+                border-radius: 50px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -38,39 +95,14 @@
 			<p>Andrés Navales Rendón | María Camila Urán Zapata
 			<small>Ingeniería Administrativa</small></p>
 			</div>
-		<div class="header-top-grids">
-			<center>
-			<div class="col-md-4 about-nav4">
-				<a class="scroll" href="#empresa"><span class="nav-icon4"> </span><label>Empresa</label></a>
-			</div>
-			<div class="col-md-4 about-nav5">
-				<a class="scroll" href="#Comportamiento"><span class="nav-icon5"> </span><label>Consumidor</label></a>
-			</div>
-			</center>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="header-bottom-grids">
-			<div class="col-md-6 left-grid text-left">
-					<div class="about-nav">
-						<a class="scroll" href="#oferta"><span class="nav-icon"> </span><center><label>Oferta</label></center></a>
-
-					</div>
-					<div class="about-nav1">
-						<a class="scroll" href="#variables"><span class="nav-icon1"> </span><label>Variables</label></a>
-					</div>
-					<div class="clearfix"> </div>				
-			</div>
-			<div class="col-md-6 right-grid text-right">
-					<div class="about-nav2">
-						<a class="scroll" href="#costos"><span class="nav-icon2"> </span><label>Costos</label></a>
-					</div>
-					<div class="about-nav3">
-						<a class="scroll" href="#estrategias"><span class="nav-icon3"> </span><label>Estrategias</label></a>
-					</div>
-					<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
+	<ul class="menu">
+            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="#services"><i class="fas fa-cogs"></i>Services</a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+            <li><a href="#blog"><i class="fas fa-blog"></i>Blog</a></li>
+        </ul>
 		<div class="arrow-grid">
 			<div class="arrow">
 				<a class="scroll" href="#header-nav"><span> </span></a>
